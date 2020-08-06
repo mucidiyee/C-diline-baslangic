@@ -1,0 +1,21 @@
+//if else kullanımını geliştirme üzerine yazılmış çalışmadır. İşveren 10 saat mesai için saat başına 5 lira, 10 saat üzerine 20 saate kadar saat başına 3 lira verilmektedir. 20 saat sonrasında saat başı 2 liradır.
+
+#include <stdio.h>
+
+int main()
+{
+  int mesai;
+printf("kaç saat çalıştığınızı yazınız:");
+scanf("%d",&mesai);
+  if(mesai<=10)
+{
+    printf("kazancınız: %d", mesai*5);
+}
+  else if( mesai<=20)
+printf("kazancınız: %d", 50 + (mesai-10)*3);
+
+  else
+printf("kazancınız: %d", 50 + 30 + (mesai-20)*2);
+
+    return 0;
+}
