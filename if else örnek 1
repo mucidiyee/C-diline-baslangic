@@ -1,0 +1,31 @@
+//C dilinde if-else ile notlara harf karşılığı bulma
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("lütfen harf sisteminde karşılığını görmek istediğiniz notu giriniz: \n");
+    scanf("%d", &a);
+    
+    if (a>100)
+    {
+        printf("geçerli bir not giriniz!");
+    }
+    else if (a>=90)
+         printf("AA");
+         
+    else if (a>=80)
+        printf("BA");
+        
+    else if (a>=70)
+        printf("BB");
+        
+    else if (a>=60)
+        printf("CC");
+        
+    else
+    printf("FF");
+
+    return 0;
+}
