@@ -1,0 +1,22 @@
+//kullanıcının girdiği 4 sayının en büyüğünü for döngüsü ile buluyoruz.
+
+#include <stdio.h>
+
+int main()
+{
+int girilen;
+
+int e_b_s;
+    for (int h=0;
+h<4; h++)
+{
+
+scanf("%d", &girilen);
+    if(girilen>e_b_s)
+    e_b_s=girilen;
+}
+
+printf("girilen en büyük sayı: %d", e_b_s);
+
+    return 0;
+}
