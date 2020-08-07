@@ -1,17 +1,17 @@
-//kullanıcının girdiği 4 sayının en büyüğünü for döngüsü ile buluyoruz.
+//kullanıcının girdiği 4 sayının en büyüğünü for döngüsü ile bulurken ekrana bellekte tutulan en büyük sayıyıda yazıyoruz.
 
 #include <stdio.h>
 
 int main()
 {
-int girilen;
+int girilen, e_b_s;
 
-int e_b_s;
-    for (int h=0;
+for (int h=0;
 h<4; h++)
 {
 
 scanf("%d", &girilen);
+printf("%d\t", e_b_s);
     if(girilen>e_b_s)
     e_b_s=girilen;
 }
