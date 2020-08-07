@@ -1,0 +1,15 @@
+//120'den 15'e kadar 4 ve 7'ye tam bölünen sayıları for döngüsü kullanarak yazdıralım.
+
+#include <stdio.h>
+
+int main()
+{
+
+for (int h=120; 
+h>=15; h--)
+{
+    if( h%4==0 && h%7==0)
+    printf("%d\n", h);
+}
+    return 0;
+}
