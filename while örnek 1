@@ -1,0 +1,25 @@
+//Kullanıcı 0 değerini girene kadar girilen sayıların ortalamasını bulacağız.
+
+#include <stdio.h>
+
+int main()
+{
+
+int girilen, h= 0;
+int ort;
+float toplam;
+
+while(girilen!=0)
+{
+    scanf("%d", &girilen);
+    h++;
+    toplam=toplam+girilen;
+}
+
+h--;
+
+printf("girilen sayıların ortalaması: %f\n",toplam/h);
+
+printf("girilen sayı adedi: %d\ngirilen sayılar toplamı: %f", h, toplam);
+    return 0;
+}
