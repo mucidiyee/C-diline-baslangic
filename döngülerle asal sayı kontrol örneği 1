@@ -1,0 +1,39 @@
+//Kullanıcının girdiği sayı asal mı değil mi döngülerle kontrol ediyoruz.
+
+#include <stdio.h>
+
+int main()
+{
+
+int j;
+int flag=0;
+
+printf("asal olma durumunu merak ettiğiniz sayıyı giriniz:");
+scanf("%d",&j);
+
+if(j==1)
+{
+flag++;
+}
+
+for(int h=1;
+h<j-1;h++)
+{
+
+if(j%h==0)
+{
+flag++;
+}
+  else 
+  flag++;
+break;
+}
+
+if(flag==0)
+{
+printf("sayı asaldır");
+}
+  else printf("sayı asal değildir");
+
+    return 0;
+}
