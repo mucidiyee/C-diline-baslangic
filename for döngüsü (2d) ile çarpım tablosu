@@ -1,0 +1,19 @@
+//1'den 6'ya kadar olan sayıları çarpım tablosu şeklinde çarparak yazdık.
+
+#include <stdio.h>
+
+int main()
+{
+
+int h,j, ;
+
+for(h=1;h<=6;h++)
+{
+  for(j=1;j<=6;j++)
+  {
+      printf("%d " ,h*j); //%d'nin yanındaki boşluk olmasaydı tüm rakamlar bitişik olacaktı.
+  }
+  printf("\n");
+}
+    return 0;
+}
