@@ -24,7 +24,7 @@ h++;
     if(j%h==0)
     {
     flag=1;
-    break;
+    break; //Break komutunu kullanıyoruz çünkü eğer sayıyı tam bölen bir değer varsa bilgisayar sonraki sayıları denemekle vakit kaybetmesin
     }
 }
 
