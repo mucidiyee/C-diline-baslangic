@@ -1,0 +1,64 @@
+//iki boyutlu bir döngü yapısı kullanarak soldan hizalı dik üçgen elde ettik. h değişkeni satırı belirlerken j değişkeni ekrana yıldız yazılmasını sağlıyor.//
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int h,j;
+    for(h=0;h<=6;h++)
+    {
+        for(j=0;j<h;j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+//iki boyutlu bir döngü yapısı kullanarak soldan hizalı ters dik üçgen elde ettik. h değişkenine göre satır atlanırken j değişkenine görede yıldız yazdırıldı.//
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int h,j;
+    for(h=6;h>=0;h--)
+    {
+        for(j=0;j<=h;j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+//Yine for döngülerini kullanarak ikizkenar üçgen yaptık..
+
+#include <stdio.h>
+
+int main()
+{
+    int h,j,k;
+    for(h=6;h>=0;h--)
+    {
+        for(k=0;k<6-h;k++)
+        {
+            printf(" ");
+        }
+        
+        for(j=1;j<=h;j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+         
+        
+    }
+    return 0;
+}
